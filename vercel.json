@@ -1,23 +1,10 @@
 {
   "buildCommand": "echo 'Ready to deploy'",
   "outputDirectory": ".",
-  "framework": "html",
-  "public": true,
   "rewrites": [
     {
-      "source": "/:path*",
-      "destination": "/index.html"
-    }
-  ],
-  "headers": [
-    {
       "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
-        }
-      ]
+      "destination": "/index.html"
     }
   ]
 }
